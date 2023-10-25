@@ -2,8 +2,11 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-// Swiper 8.4.7
-// @import "vendor/swiper";
+@import "vendor/swiper";
+@import "vendor/tabs";
+@import "vendor/data-tabs";
+@import "vendor/accordion";
+@import "vendor/data-accordion";
 
 // Global
 // ---------------------------------
@@ -36,8 +39,6 @@
 @import "blocks/registration";
 @import "blocks/contacts";
 @import "blocks/footer";
-
-
 
 // ---------------------------------
 
