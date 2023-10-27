@@ -2,9 +2,10 @@
   background-color: $ghost-white;
   color: $color-sapphire;
   text-align: center;
-  padding-top: 68px;
+  padding-top: 120px;
   padding-bottom: 120px;
   position: relative;
+  overflow-x: clip;
 
   h2 {
     display: block;
