@@ -1,0 +1,83 @@
+.faq {
+  background-color: $ghost-white;
+  color: $color-sapphire;
+
+  h2 {
+    font-family: $ff-alumniSans-semibold;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    margin: 0 auto;
+    margin-bottom: 51px;
+  }
+}
+
+.faq__wrapper {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 40px;
+}
+
+.faq__tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.faq__tab-button {
+  font-family: $ff-regular;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.faq__tab-button.is-active {
+  background: $button-gradient;
+  color: $color-default-white;
+  border: none;
+}
+
+.faq__pane {
+  width: 100%;
+}
+
+.faq__accordion-button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 12px;
+
+  span {
+    margin-left: 60px;
+  }
+}
+
+.faq__accordion-element {
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(16,	38,	84, 0.2);
+
+  & p {
+    color: $color-sapphire;
+    font-family: $ff-light;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    padding-right: 200px;
+  }
+
+  &:first-child {
+    border-top: 1px solid rgba(16,	38,	84, 0.2);
+  }
+
+}
+
+.faq__accordion-element.is-active span {
+  background-color: $resolution-blue;
+}
+
