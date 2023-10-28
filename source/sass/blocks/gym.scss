@@ -1,0 +1,106 @@
+.gym {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 82px;
+  background-color: $color-default-white;
+  color: $color-sapphire;
+}
+
+.gym__info {
+  padding: 0;
+  max-width: 355px;
+
+
+  h2 {
+    font-family: $ff-alumniSans-semibold;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  span {
+    display: block;
+    font-family: $ff-regular;
+    font-size: 22px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 95px;
+  }
+
+  p {
+    font-family: $ff-light;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.gym__view {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gym__photo {
+  overflow: hidden;
+  max-width: 660px;
+  align-self: flex-end;
+  /* margin-left: 63px;*/
+  /* margin-bottom: 95px; */
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.gym__video {
+
+  position: relative;
+  width: 364px;
+  height: 228px;
+  margin-top: -115px;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.gym__video-rpeview {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: no-repeat center / cover url("../img/video_preview.jpg");
+}
+
+.gym__video-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: no-repeat center / contain url("../img/svg/play_icon.svg") transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
