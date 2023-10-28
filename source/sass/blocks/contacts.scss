@@ -1,0 +1,71 @@
+.contacts {
+  color: $color-sapphire;
+  padding: 60px 120px;
+  border-top: 1px solid $light-slate-grey;
+
+  h2 {
+    font-family: $ff-alumniSans-semibold;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  div {
+    display: flex;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:last-child {
+      padding-left: 70px;
+      margin-bottom: 0;
+      border-left: 1px solid $light-slate-grey;
+    }
+  }
+
+  li:not(:last-child) {
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-family: $ff-regular;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+
+  address,
+  p,
+  a {
+    font-family: $ff-regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    color: $color-sapphire;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+}

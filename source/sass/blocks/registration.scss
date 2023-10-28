@@ -1,0 +1,130 @@
+.registration {
+  background-color: $color-sapphire;
+  padding-top: 70px;
+  padding-right: 170px;
+  padding-bottom: 70px;
+  padding-left: 103px;
+
+  h2 {
+    font-family: $ff-alumniSans-semibold;
+    color: $color-default-white;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 54px;
+    letter-spacing: 1.62px;
+    margin: 0;
+    margin-bottom: 33px;
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px 30px;
+  }
+
+  & .input-message {
+    color: $color-default-white;
+    font-size: 12px;
+    line-height: 12px;
+
+    &.is-invalid {
+      color: $color-torch-red;
+    }
+  }
+
+  div {
+    width: 100%;
+
+    &.is-invalid input {
+      border-bottom: 1px solid $color-torch-red;
+
+      &:focus,
+      &:focus-visible {
+        border: 1px solid $color-torch-red;
+      }
+    }
+  }
+
+  input {
+    width: 100%;
+    font-family: $ff-regular;
+    font-size: 14px;
+    line-height: 16px;
+    color: $color-default-white;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &::placeholder {
+      font-family: $ff-regular;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-default-white;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    &:focus,
+    &:focus-visible {
+      outline: none;
+      border: 1px solid $color-default-white;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    &:not(input[type="tel"]):focus {
+      padding-left: 15px;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+
+      &:hover {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    font-family: $ff-bold;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-align: center;
+    color: $color-default-white;
+    border: 3px solid $color-default-white;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px 18px 16px;
+    grid-column: 1/-1;
+
+    &:hover,
+    &:focus {
+      background-color: $color-default-white;
+      border-image: $gradient;
+      border-image-slice: 1;
+      color: $color-sapphire;
+    }
+
+    &:active {
+      background-color: $color-default-white;
+      border-image: $gradient;
+      border-image-slice: 1;
+      color: $color-sapphire;
+      opacity: 0.6;
+    }
+  }
+}
