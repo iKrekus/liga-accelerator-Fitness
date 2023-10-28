@@ -1,0 +1,181 @@
+/*
+.button {
+  display: inline-flex;
+  padding: 10px 20px;
+
+  color: $color-default-white;
+
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+*/
+
+.button {
+  // display: inline-flex;
+  padding: 10px 20px;
+  font-family: $ff-regular;
+  color: $color-default-white;
+
+  background-color: $color-egyptian-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &--tab {
+    padding: 18px 0;
+    border: 1px solid rgba(16,	38,	84, 0.2);
+    background: none;
+    color: $color-sapphire;
+
+    &:hover,
+    &:focus {
+      border: 1px solid $color-sapphire;
+    }
+  }
+
+  &--accordion {
+    position: relative;
+    font-family: $ff-regular;
+    font-size: 18px;
+    width: 100%;
+    background: none;
+    color: $color-sapphire;
+    text-align: left;
+    padding: 0;
+
+    & span {
+      min-width: 32px;
+      min-height: 32px;
+      border: 1px solid $resolution-blue;
+      border-radius: 50%;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 12px;
+        height: 1px;
+        background-color: $resolution-blue;
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+    }
+
+    &:hover span {
+      background-color: $resolution-blue;
+
+      &::before,
+      &::after {
+        background-color: $color-default-white;
+      }
+    }
+
+    &:active span,
+    // оставляет стилизацию, если не закрыт аккордеон
+    .accordion .is-active & span {
+      background-color: $resolution-blue;
+
+      &::before {
+        background-color: $color-default-white;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.button-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 22px;
+  width: 30px;
+  height: 100%;
+
+  &::after {
+    content: "";
+    background: no-repeat center/10px url(../img/svg/arrow.svg);
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+  }
+
+  &--prev {
+    background-position: left;
+    left: -60px;
+
+    // &.jury__slider-button {
+    //   left: -10px;
+    // }
+
+    // &.reviews__slider-button {
+    //   left: -41px;
+    // }
+  }
+
+  &--next {
+    background-position: right;
+    right: -60px;
+
+    // &.jury__slider-button {
+    //   right: -10px;
+    // }
+
+    // &.reviews__slider-button {
+    //   right: -41px;
+    // }
+
+    &::after {
+      transform: scale(-1, 1);
+    }
+  }
+
+  &:hover::after,
+  &:focus::after {
+    border: 1px solid $color-sapphire;
+    border-radius: 50%;
+  }
+
+  &:active::after {
+    background: $color-sapphire no-repeat center/10px url(../img/svg/arrow-light.svg);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+  }
+}

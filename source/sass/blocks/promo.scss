@@ -75,13 +75,13 @@
     font-family: $ff-regular;
     font-size: 14px;
     font-weight: 400;
-    line-height: normal;
+    line-height: 14px;
   }
   span {
     font-family: $ff-bold;
     font-size: 40px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 40px;
     margin-right: 6px;
   }
 
@@ -109,7 +109,7 @@
     font-family: $ff-bold;
     font-size: 40px;
     font-weight: 700;
-    line-height: normal;
+    line-height: 40px;
   }
 }
 
@@ -129,9 +129,8 @@
     font-family: $ff-bold;
     color:$color-default-white;
     font-size: 12px;
-    font-family: $ff-regular;
-    line-height: normal;
     font-weight: 700;
+    line-height: 12px;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     color: $color-default-white;
