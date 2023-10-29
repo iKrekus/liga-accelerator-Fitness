@@ -123,16 +123,13 @@
 .button-slider {
   position: absolute;
   cursor: pointer;
-  top: 22px;
   width: 30px;
-  height: 100%;
+
 
   &::after {
     content: "";
-    background: no-repeat center/10px url(../img/svg/arrow.svg);
-    width: 100%;
-    height: 30px;
-    padding: 10px;
+    background: no-repeat center/16px url(../img/svg/arrow.svg);
+    padding: 26px;
   }
 
   &--prev {
@@ -172,7 +169,7 @@
   }
 
   &:active::after {
-    background: $color-sapphire no-repeat center/10px url(../img/svg/arrow-light.svg);
+    background: $color-sapphire no-repeat center/16px url(../img/svg/arrow-light.svg);
   }
 
   &:disabled {
