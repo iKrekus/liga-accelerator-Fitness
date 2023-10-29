@@ -1,14 +1,25 @@
 .gym {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 82px;
+  grid-template-columns: auto auto;
+  gap: 0 82px;
   background-color: $color-default-white;
   color: $color-sapphire;
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 36px 0;
+  }
 }
 
 .gym__info {
   padding: 0;
   max-width: 355px;
+
+  @include vp-767 {
+    max-width: 100%;
+    padding: 0 88px;
+  }
 
 
   h2 {
@@ -19,6 +30,12 @@
     letter-spacing: 1.62px;
     margin: 0;
     margin-bottom: 25px;
+
+    @include vp-767 {
+      font-size: 42px;
+      line-height: 42px;
+      margin-bottom: 20px;
+    }
   }
 
   span {
@@ -28,6 +45,12 @@
     font-weight: 400;
     line-height: 22px;
     margin-bottom: 95px;
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 36px;
+    }
   }
 
   p {
@@ -37,6 +60,12 @@
     line-height: 24px;
     margin: 0;
     margin-bottom: 20px;
+
+    @include vp-767 {
+      &:last-child {
+        display: none;
+      }
+    }
   }
 }
 
@@ -51,8 +80,11 @@
   overflow: hidden;
   max-width: 660px;
   align-self: flex-end;
-  /* margin-left: 63px;*/
-  /* margin-bottom: 95px; */
+
+  @include vp-767 {
+    max-width: 100%;
+    align-self: auto;
+  }
 
   img {
     display: block;
@@ -68,6 +100,11 @@
   width: 364px;
   height: 228px;
   margin-top: -115px;
+
+  @include vp-767 {
+    margin: 0 auto;
+    margin-top: -84px;
+  }
 
   iframe {
     width: 100%;

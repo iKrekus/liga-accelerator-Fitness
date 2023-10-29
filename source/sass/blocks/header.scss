@@ -1,11 +1,19 @@
 .header {
-  background: conic-gradient(from 165deg at 35% 40%, rgba(184, 0, 39, 1) 10%, rgba(0, 61, 133, 1) 34%, rgba(184, 0, 39, 1));
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
   color:$color-default-white;
   padding-bottom: 120px;
+
+  @include vp-767 {
+    padding-bottom: 100px;
+  }
 }
 
 .header__container {
   padding: 0 103px;
+
+  @include vp-767 {
+    padding: 0 45px;
+  }
 }
 
 .header__links {
@@ -40,11 +48,19 @@
       color: $color-egyptian-blue;
       opacity: 0.6;
     }
+
+    @include vp-767 {
+    font-size: 24px;
+    line-height: 24px;
+    }
   }
 
   img {
     min-width: 120px;
-    min-height: auto;
+
+    @include vp-767 {
+      min-width: 111px;
+    }
   }
 }
 
@@ -52,6 +68,10 @@
   display: flex;
   gap: 70px;
   align-items: center;
+
+  @include vp-767 {
+    gap: 30px;
+  }
 }
 
 .header__main-image {
@@ -61,8 +81,12 @@
 .header__main-info {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  max-width: 385px;
+  grid-template-columns: auto auto;
+  gap: 0 20px;
+
+  @include vp-767 {
+    grid-template-columns: auto 2fr;
+  }
 
   p {
     font-family: $ff-alumniSans-semibold;
@@ -74,6 +98,12 @@
     margin: 0;
     grid-column: 2/-1;
     text-align: right;
+
+    @include vp-767 {
+      font-size: 42px;
+      line-height: 42px;
+      letter-spacing: 1.26px;
+    }
   }
 
   h1 {
@@ -90,6 +120,12 @@
     text-align: right;
     padding-top: 10px;
     padding-bottom: 50px;
+
+    @include vp-767 {
+      font-size: 72px;
+      line-height: 85px;
+      letter-spacing: normal;
+    }
   }
 
   ul {
@@ -114,11 +150,9 @@
     color:$color-default-white;
     border: 2px solid $color-default-white;
     text-align: center;
-
-
-    width: 230px;
+    min-width: 230px;
     line-height: 12px;
-    padding: 27px;
+    padding: 27px 0;
     text-transform: uppercase;
     grid-column: 2/-1;
     justify-self: flex-end;
@@ -136,11 +170,32 @@
     &:disabled {
       opacity: 0.5;
     }
+
+    @include vp-767 {
+      min-width: 185px;
+      padding: 22px 0;
+    }
   }
 }
 
 .header__main-image {
   margin-right: auto;
+
+  @include vp-767 {
+    max-width: 324px;
+    height: 390px;
+  }
+
+  img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-767 {
+      object-position: 40%;
+    }
+
+  }
 }
 
 
