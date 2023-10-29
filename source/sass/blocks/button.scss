@@ -124,6 +124,9 @@
   position: absolute;
   cursor: pointer;
   width: 30px;
+  background: none;
+  padding: 0;
+  border: none;
 
 
   &::after {
@@ -170,9 +173,11 @@
 
   &:active::after {
     background: $color-sapphire no-repeat center/16px url(../img/svg/arrow-light.svg);
+    border-radius: 50%;
   }
 
   &:disabled {
     opacity: 0.5;
+    pointer-events: none;
   }
 }
