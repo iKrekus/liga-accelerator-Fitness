@@ -5,18 +5,24 @@
 
 .promo__text {
   display: flex;
+  width: 100%;
   max-width: 500px;
   flex-direction: column;
   color: $color-default-white;
   background-color: $color-torch-red;
   padding: 80px;
-  min-width: 500px;
+
+  @include vp-767 {
+    max-width: 292px;
+    padding: 45px;
+    padding-top: 40px;
+  }
 }
 
 .promo__top {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 10px;
+  margin-bottom: 23px;
 
   h2 {
     font-family: $ff-alumniSans-semibold;
@@ -26,8 +32,13 @@
     font-weight: 600;
     width: min-content;
     margin: 0;
-    margin-right: 30px;
     text-transform: uppercase;
+
+    @include vp-767 {
+      font-size: 48px;
+      line-height: 46px;
+      letter-spacing: 1.44px;
+    }
   }
 }
 
@@ -35,6 +46,7 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-left: auto;
 
   h3 {
     display: block;
@@ -70,12 +82,21 @@
     font-weight: 300;
     margin: 0;
     padding-bottom: 8px;
+
+    @include vp-767 {
+      padding-bottom: 0;
+    }
   }
   p {
     font-family: $ff-regular;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
+
+    @include vp-767 {
+      padding-top: 4px;
+      font-size: 10px;
+    }
   }
   span {
     font-family: $ff-bold;
@@ -83,6 +104,12 @@
     font-weight: 700;
     line-height: 40px;
     margin-right: 6px;
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 24px;
+      margin-right: 3px;
+    }
   }
 
   div {
@@ -110,6 +137,11 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
+
+    @include vp-767 {
+      font-size: 24px;
+      line-height: 24px;
+    }
   }
 }
 
@@ -135,9 +167,9 @@
     text-transform: uppercase;
     color: $color-default-white;
     text-align: center;
-    padding: 16px;
+    padding: 27px 0;
     border: 2px solid $color-default-white;
-    width: 340px;
+    width: 100%;
 
     &:hover,
     &:focus {

@@ -25,6 +25,13 @@
     background: no-repeat url("../img/weight_plates.png") transparent;
     background-size: contain;
     z-index: 0;
+
+    @include vp-767 {
+      bottom: -100px;
+      right: -13px;
+      width: 275px;
+      height: 328px;
+    }
   }
 }
 
@@ -87,13 +94,18 @@
   width: 100%;
 
   ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 40px;
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @include vp-767 {
+      flex-direction: column;
+      padding: 0 119px;
+    }
   }
 
   li {
@@ -185,7 +197,8 @@
     }
   }
 
-  li:hover {
+  li:hover,
+  li.subscript__item-selected {
     border: 7px solid $color-default-white;
     border-image: $border-gradient-vertical;
     border-image-slice: 1;

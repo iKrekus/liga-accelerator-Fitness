@@ -12,13 +12,9 @@ const jurySlider = new Swiper('.jury__slider', {
       slidesPerView: 1,
       spaceBetween: 0,
     },
-    768: {
+    767: {
       slidesPerView: 2,
       spaceBetween: 30,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 40,
     },
   },
 
