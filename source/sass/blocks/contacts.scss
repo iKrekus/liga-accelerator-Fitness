@@ -11,11 +11,24 @@
     letter-spacing: 1.62px;
     margin: 0;
     margin-bottom: 40px;
+
+    @include vp-767 {
+      font-family: $ff-alumniSans-semibold ;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 1.26px;
+      margin-bottom: 36px;
+    }
   }
 
   div {
     display: flex;
     flex-wrap: wrap;
+
+    @include vp-767 {
+      flex-wrap: nowrap;
+    }
   }
 
   ul {
@@ -28,12 +41,20 @@
       padding-left: 70px;
       margin-bottom: 0;
       border-left: 1px solid $light-slate-grey;
+
+      @include vp-767 {
+        padding-left: 60px;
+      }
     }
   }
 
   li:not(:last-child) {
     margin: 0;
     margin-bottom: 15px;
+
+    @include vp-767 {
+      margin-bottom: 27px;
+    }
   }
 
   h3 {
@@ -43,6 +64,12 @@
     line-height: 24px;
     margin: 0;
     margin-bottom: 5px;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 11px;
+    }
   }
 
   address,
