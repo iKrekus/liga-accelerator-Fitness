@@ -39,6 +39,10 @@
   @include vp-767 {
     width: 580px;
   }
+
+  @include vp-374 {
+    width: 226px;
+  }
 }
 
 .reviews__slide {

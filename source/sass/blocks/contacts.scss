@@ -3,6 +3,10 @@
   padding: 60px 120px;
   border-top: 1px solid $light-slate-grey;
 
+  @include vp-374 {
+    padding: 70px 15px;
+  }
+
   h2 {
     font-family: $ff-alumniSans-semibold;
     font-size: 54px;
