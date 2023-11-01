@@ -10,6 +10,13 @@
     text-align: center;
     gap: 36px 0;
   }
+
+  @include vp-374 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+  }
 }
 
 .gym__info {
@@ -39,6 +46,13 @@
       line-height: 42px;
       margin-bottom: 20px;
     }
+
+    @include vp-374 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin-bottom: 13px;
+    }
   }
 
   span {
@@ -51,6 +65,12 @@
 
     @include vp-767 {
       font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 36px;
+    }
+
+    @include vp-374 {
+      font-size: 18px;
       line-height: 20px;
       margin-bottom: 36px;
     }
@@ -69,6 +89,11 @@
         display: none;
       }
     }
+
+    @include vp-374 {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -77,6 +102,15 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+
+  @include vp-374 {
+   width: 100vw;
+   margin-left: -15px;
+  }
+
+  @include vp-374 {
+   gap: 40px;
+  }
 }
 
 .gym__photo {
@@ -89,11 +123,19 @@
     align-self: auto;
   }
 
+  @include vp-374 {
+   height: 313px;
+  }
+
   img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    @include vp-374 {
+      object-position: 85%;
+    }
   }
 }
 
@@ -111,6 +153,8 @@
 
   @include vp-374 {
     width: 100%;
+    max-height: 167px;
+    margin: 0;
   }
 
   iframe {
@@ -145,6 +189,11 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  @include vp-374 {
+   width: 72px;
+   height: 72px;
   }
 }
 
