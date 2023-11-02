@@ -40,6 +40,13 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @include vp-374 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-content: stretch;
+  }
 }
 
 .faq__tab-button {
@@ -47,6 +54,11 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
+
+  @include vp-374 {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .faq__tab-button.is-active {
@@ -76,6 +88,14 @@
   span {
     margin-left: 60px;
   }
+
+  @include vp-374 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  span {
+    margin-left: 80px;
+  }
 }
 
 .faq__accordion-element {
@@ -90,6 +110,10 @@
     line-height: 24px;
     margin: 0;
     padding-right: 200px;
+
+    @include vp-374 {
+     padding: 0;
+    }
   }
 
   &:first-child {

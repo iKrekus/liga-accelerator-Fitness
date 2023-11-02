@@ -90,6 +90,9 @@
   padding-top: 40px;
   width: 50%;
 
+  @include vp-374 {
+    width: 100%;
+  }
 
   h3 {
     font-family: $ff-bold;
@@ -130,6 +133,10 @@
     object-position: 50% 90%;
     width: 100%;
     height: 100%;
+  }
+
+  @include vp-374 {
+    width: 100%;
   }
 }
 

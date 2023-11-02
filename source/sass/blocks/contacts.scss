@@ -24,6 +24,15 @@
       letter-spacing: 1.26px;
       margin-bottom: 36px;
     }
+
+    @include vp-374 {
+      font-family: $ff-alumniSans-semibold;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+      margin-bottom: 42px;
+    }
   }
 
   div {
@@ -32,6 +41,11 @@
 
     @include vp-767 {
       flex-wrap: nowrap;
+    }
+
+    @include vp-374 {
+     flex-direction: column;
+     gap: 28px;
     }
   }
 
@@ -49,6 +63,11 @@
       @include vp-767 {
         padding-left: 60px;
       }
+
+      @include vp-374 {
+        border: none;
+        padding: 0
+      }
     }
   }
 
@@ -58,6 +77,10 @@
 
     @include vp-767 {
       margin-bottom: 27px;
+    }
+
+    @include vp-374 {
+      margin-bottom: 28px;
     }
   }
 
@@ -74,6 +97,12 @@
       line-height: 22px;
       margin-bottom: 11px;
     }
+
+    @include vp-374 {
+      font-size: 20px;
+      line-height: 20px;
+      margin-bottom: 12px;
+    }
   }
 
   address,
@@ -85,6 +114,19 @@
     line-height: 22px;
     font-style: normal;
     margin: 0;
+
+    @include vp-374 {
+      line-height: 20px;
+      margin-bottom: 28px;
+    }
+
+
+  }
+
+  p {
+    @include vp-374 {
+       margin-bottom: 0;
+    }
   }
 
   a {
@@ -99,5 +141,12 @@
     &:active {
       opacity: 0.3;
     }
+
+    &:last-child {
+      @include vp-374 {
+       margin: 0;
+      }
+    }
   }
 }
+
