@@ -150,6 +150,11 @@
     @include vp-767 {
       left: 0;
     }
+
+    @include vp-374 {
+      left: -45px;
+      left: 0;
+    }
   }
 
   &--next {
@@ -161,6 +166,11 @@
     }
 
     @include vp-767 {
+      right: 0;
+    }
+
+    @include vp-374 {
+      right: -45px;
       right: 0;
     }
   }
