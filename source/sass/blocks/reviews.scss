@@ -44,16 +44,17 @@
 }
 
 .reviews__slider {
-  width: 560px;
+  max-width: 560px;
+  width: 100%;
   background-color: $resolution-blue;
 
   @include vp-767 {
-    width: 580px;
+    max-width: 580px;
   }
 
-  @include vp-374 {
-    width: 100%;
-  }
+  // @include vp-374 {
+  //   width: 100%;
+  // }
 }
 
 .reviews__slide {

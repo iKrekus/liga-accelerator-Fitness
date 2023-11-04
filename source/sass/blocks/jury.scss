@@ -102,8 +102,9 @@
     ul {
       height: 120px;
       width: 100%;
-      margin: 0;
-      padding: 0 50px;
+      margin: 0 auto;
+      max-width: 160px;
+      padding-left: 16px;
       overflow-y: auto;
       scrollbar-width: none;
       flex-grow: 1;

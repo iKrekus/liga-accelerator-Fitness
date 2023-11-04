@@ -60,6 +60,10 @@
 
 .footer__logo {
   width: 109px;
+
+  @include vp-374 {
+    align-self: start;
+  }
 }
 
 .footer__navigation {
