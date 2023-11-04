@@ -11,7 +11,7 @@
     margin: 0;
     padding-bottom: 45px;
 
-    @include vp-767 {
+    @include vp-1365 {
       font-size: 42px;
       line-height: 42px;
       letter-spacing: 1.26px;
@@ -24,11 +24,11 @@
 .jury__slider-wrapper {
   position: relative;
 
-  @include vp-767 {
+  @include vp-1365 {
     padding: 0 55px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     padding: 0px 32px;
   }
 }

@@ -55,11 +55,11 @@
       border: 1px solid $color-sapphire;
     }
 
-    @include vp-767 {
+    @include vp-1365 {
       padding: 18px 48px;
     }
 
-    @include vp-374 {
+    @include vp-767 {
       padding: 14px 0;
     }
   }
@@ -142,7 +142,7 @@
     background: no-repeat center/16px url(../img/svg/arrow.svg);
     padding: 26px;
 
-    @include vp-374 {
+    @include vp-767 {
       background: no-repeat center/10px url(../img/svg/arrow.svg);
       padding: 16px;
     }
@@ -152,7 +152,7 @@
     background-position: left;
     left: -60px;
 
-    @include vp-767 {
+    @include vp-1365 {
       left: -4px;
     }
   }
@@ -165,7 +165,7 @@
       transform: scale(-1, 1);
     }
 
-    @include vp-767 {
+    @include vp-1365 {
       right: -4px;
     }
   }
