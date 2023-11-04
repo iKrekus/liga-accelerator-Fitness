@@ -32,6 +32,10 @@
       width: 275px;
       height: 328px;
     }
+
+    @include vp-374 {
+     display: none;
+    }
   }
 }
 
