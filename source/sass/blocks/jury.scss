@@ -27,6 +27,10 @@
   @include vp-767 {
     padding: 0 55px;
   }
+
+  @include vp-374 {
+    padding: 0px 32px;
+  }
 }
 
 
@@ -103,6 +107,9 @@
       overflow-y: auto;
       scrollbar-width: none;
       flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
 
       &::-webkit-scrollbar {
         display: none;
@@ -112,10 +119,6 @@
         font-family: $ff-regular;
         font-size: 14px;
         line-height: 21px;
-
-        &:not(:last-child) {
-          margin-bottom: 12px;
-        }
       }
     }
   }

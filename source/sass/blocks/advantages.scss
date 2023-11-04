@@ -21,6 +21,12 @@
       letter-spacing: 1.26px;
       margin-bottom: 50px;
     }
+
+    @include vp-374 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
+    }
   }
 }
 
@@ -41,8 +47,6 @@
   @include vp-374 {
     display: flex;
     flex-direction: column;
-    // grid-template-columns: auto;
-    // grid-template-rows: auto;
     gap: 30px 40px;
   }
 }
@@ -56,6 +60,12 @@
   @include vp-767 {
     flex-wrap: nowrap;
     gap: 0 14px;
+  }
+
+  @include vp-374 {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
   }
 
   div:first-child {
@@ -73,6 +83,11 @@
       background-image: $gradient;
       margin: 0 30px 1px 0;
       margin: 0;
+
+      @include vp-374 {
+        font-size: 64px;
+        line-height: 64px;
+      }
     }
 
     span:last-child {
@@ -82,6 +97,10 @@
       line-height: 22px;
       color: $persian-blue;
       text-align: left;
+
+        @include vp-374 {
+          text-align: center;
+        }
     }
   }
 
@@ -97,6 +116,11 @@
       font-size: 20px;
       line-height: 20px;
     }
+
+    @include vp-374 {
+      font-size: 18px;
+      text-align: center;
+    }
   }
 
   p {
@@ -110,6 +134,12 @@
     @include vp-767 {
       font-size: 16px;
       line-height: 24px;
+    }
+
+    @include vp-374 {
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
     }
   }
 
@@ -178,6 +208,11 @@
       padding: 35px;
       margin: 0 auto;
 
+      @include vp-374 {
+        max-width: none;
+        width: 100vw;
+        margin-left: -15px;
+      }
     }
 
     span {

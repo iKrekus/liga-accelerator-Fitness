@@ -1,6 +1,11 @@
 .promo__wrapper {
   display: flex;
   width: 100%;
+
+  @include vp-374 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .promo__text {
@@ -16,6 +21,11 @@
     max-width: 292px;
     padding: 45px;
     padding-top: 40px;
+  }
+
+  @include vp-374 {
+    max-width: none;
+    width: 100%;
   }
 }
 
@@ -190,6 +200,10 @@
 .promo__image {
   overflow: hidden;
   width: 100%;
+
+  @include vp-374 {
+    height: 292px;
+  }
 
   img {
     width: 100%;
