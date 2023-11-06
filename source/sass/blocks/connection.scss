@@ -1,5 +1,11 @@
 .connection {
   position: relative;
+  background: $connection-background;
+  overflow: hidden;
+
+  @include vp-1365 {
+    background: none;
+  }
 }
 
 .connection__wrapper {

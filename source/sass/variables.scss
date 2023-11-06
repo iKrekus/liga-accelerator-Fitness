@@ -30,6 +30,7 @@ $main-screen-gradient:                conic-gradient(from 165deg at 35% 40%, rgb
 $border-gradient-horizontal:          linear-gradient(160deg, #d10a42 17.6%, #003eb7 95.31%);
 $button-gradient:                     linear-gradient(97deg, #d10a42 17.6%, #003eb7 95.31%);
 $player-button-gradient:              linear-gradient(97deg, rgba(237, 2, 51, 1) 17.6%, rgba(0, 62,	183, 1) 95.31%);
+$connection-background:               linear-gradient(to right, $color-sapphire 50%, $color-default-white 50%);
 
 // Typography
 // ---------------------------------

@@ -1,12 +1,16 @@
 .registration {
-  background-color: $color-sapphire;
   padding-top: 70px;
   padding-right: 170px;
   padding-bottom: 70px;
   padding-left: 103px;
+  max-width: 688px;
+  margin-left: auto;
 
   @include vp-1365 {
     padding: 100px 133px;
+    background: $color-sapphire;
+    max-width: 100%;
+    margin-left: 0;
   }
 
   @include vp-767 {
