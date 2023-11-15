@@ -1,4 +1,4 @@
-.subscript {
+.price {
   background-color: $ghost-white;
   color: $color-sapphire;
   text-align: center;
@@ -34,17 +34,17 @@
     }
 
     @include vp-767 {
-     display: none;
+      display: none;
     }
   }
 }
 
-.subscript__tabs {
+.price__tabs {
   position: relative;
   z-index: 1;
 }
 
-.subscript__nav {
+.price__nav {
   display: flex;
   gap: 45px;
   width: fit-content;
@@ -52,7 +52,7 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
-.subscript__tab {
+.price__tab {
   position: relative;
   font-family: $ff-regular;
   font-size: 20px;
@@ -81,18 +81,18 @@
     left: 0;
   }
 
-  &:not(.subscript__tab--active):hover {
+  &:not(.price__tab--active):hover {
     color: $color-sapphire;
     opacity: 0.9;
   }
 
-  &:not(.subscript__tab--active):focus {
+  &:not(.price__tab--active):focus {
     color: $color-sapphire;
     opacity: 0.9;
   }
 }
 
-.subscript__pane {
+.price__pane {
   width: 100%;
 
   ul {
@@ -253,7 +253,7 @@
   }
 
   li:hover,
-  li.subscript__item-selected {
+  li.price__item-selected {
     border: 7px solid $color-default-white;
     border-image: $border-gradient-vertical;
     border-image-slice: 1;

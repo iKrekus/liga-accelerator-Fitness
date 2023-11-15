@@ -1,4 +1,4 @@
-.discounts {
+.offers {
 
   h2 {
     font-family: $ff-alumniSans-semibold;
@@ -48,7 +48,7 @@
   }
 }
 
-.discounts__wrapper {
+.offers__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   color: $resolution-blue;
@@ -64,7 +64,7 @@
   }
 }
 
-.discounts__unlimited {
+.offers__unlimited {
   display: flex;
   grid-row: 1/span 2;
   width: 100%;
@@ -82,7 +82,7 @@
   }
 }
 
-.discounts__unlimited-info {
+.offers__unlimited-info {
   display: flex;
   flex-direction: column;
   background-color: $color-torch-red;
@@ -124,7 +124,7 @@
   }
 }
 
-.discounts__unlimited-image {
+.offers__unlimited-image {
   width: 50%;
   overflow: hidden;
 
@@ -140,7 +140,7 @@
   }
 }
 
-.discounts__block {
+.offers__block {
   display: flex;
   flex-direction: column;
   min-height: 211px;

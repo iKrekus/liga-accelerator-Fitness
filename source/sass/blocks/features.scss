@@ -1,4 +1,4 @@
-.advantages {
+.features {
   background-color: $ghost-white;
   color: $color-sapphire;
 
@@ -30,7 +30,7 @@
   }
 }
 
-.advantages__wrapper {
+.features__wrapper {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   gap: 0;
@@ -51,7 +51,7 @@
   }
 }
 
-.advantages__block {
+.features__block {
   display: flex;
   gap: 0 30px;
   width: 100%;

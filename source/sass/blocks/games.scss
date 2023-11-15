@@ -1,4 +1,4 @@
-.promo__wrapper {
+.games__wrapper {
   display: flex;
   width: 100%;
 
@@ -8,7 +8,7 @@
   }
 }
 
-.promo__text {
+.games__text {
   display: flex;
   width: 100%;
   max-width: 500px;
@@ -29,7 +29,7 @@
   }
 }
 
-.promo__top {
+.games__top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 23px;
@@ -52,7 +52,7 @@
   }
 }
 
-.promo__info {
+.games__info {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -82,7 +82,7 @@
   }
 }
 
-.promo__date {
+.games__date {
 
   h3 {
     font-family: $ff-light;
@@ -130,7 +130,7 @@
   }
 }
 
-.promo__time {
+.games__time {
 
   h3 {
     font-family: $ff-light;
@@ -155,7 +155,7 @@
   }
 }
 
-.promo__bottom {
+.games__bottom {
   p {
     display: block;
     font-family: $ff-light;
@@ -197,7 +197,7 @@
   }
 }
 
-.promo__image {
+.games__image {
   overflow: hidden;
   width: 100%;
 

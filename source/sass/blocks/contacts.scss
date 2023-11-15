@@ -57,8 +57,8 @@
     display: flex;
 
     @include vp-767 {
-     flex-direction: column;
-     gap: 28px;
+      flex-direction: column;
+      gap: 28px;
     }
   }
 
@@ -138,7 +138,7 @@
 
   p {
     @include vp-767 {
-       margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -157,9 +157,8 @@
 
     &:last-child {
       @include vp-767 {
-       margin: 0;
+        margin: 0;
       }
     }
   }
 }
-

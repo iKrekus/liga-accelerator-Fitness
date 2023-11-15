@@ -24,7 +24,8 @@
     "source/**/*.pug",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/sass/**/*.{sass,scss}"
+    "source/sass/**/*.{sass,scss}",
+    "!source/sass/vendor/*"
   ],
   "devDependencies": {
     "@babel/core": "7.21.4",

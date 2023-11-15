@@ -1,19 +1,11 @@
 .footer {
-  background-color: $black-russian;
-  padding-top: 41px;
-  padding-bottom: 40px;
-  max-width: 100%;
-
-  @include vp-1365 {
-   padding: 45px 46px;
-  }
-
-  @include vp-767 {
-   padding: 30px 15px;
-  }
+  display: inherit;
 }
 
 .footer__wrapper {
+  background-color: $black-russian;
+
+  &>div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,9 +13,20 @@
   max-width: $vp-1366;
   margin: 0 auto;
 
+  padding: 0 103px;
+  padding-top: 41px;
+  padding-bottom: 40px;
+
+
+
+  @include vp-1365 {
+    padding: 45px 46px;
+  }
+
   @include vp-767 {
-   flex-direction: column;
-   gap: 30px;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 15px
   }
 
   ul {
@@ -33,17 +36,17 @@
     padding: 0;
 
     @include vp-1365 {
-     margin-left: 20px;
+      margin-left: 20px;
     }
 
     @include vp-767 {
-     margin: 0;
+      margin: 0;
     }
 
     &:last-child {
       @include vp-767 {
         padding-top: 25px;
-       }
+      }
     }
   }
 
@@ -59,6 +62,7 @@
       opacity: 0.3;
     }
   }
+}
 }
 
 .footer__logo {
@@ -83,7 +87,7 @@
 
   @include vp-767 {
     gap: 20px 35px;
-   }
+  }
 
   a {
     display: block;
