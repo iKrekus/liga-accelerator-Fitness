@@ -35,7 +35,7 @@
   margin-bottom: 23px;
 
   h2 {
-    font-family: $ff-alumniSans-semibold;
+    font-family: $ff-alumniSans;
     font-size: 82px;
     line-height: 76px;
     letter-spacing: 2.46px;
@@ -60,7 +60,7 @@
 
   h3 {
     display: block;
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 12px;
     line-height: 18px;
     font-weight: 400;
@@ -68,14 +68,14 @@
   }
 
   span {
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 24px;
     line-height: 24px;
     font-weight: 700;
   }
 
   p {
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 10px;
     line-height: 15px;
     margin: 0;
@@ -85,20 +85,26 @@
 .games__date {
 
   h3 {
-    font-family: $ff-light;
+    font-family: $ff-robotoCondensed;
     margin: 0 0 3px;
     font-size: 18px;
-    line-height: 24px;
     font-weight: 300;
+    line-height: 24px;
+
     margin: 0;
     padding-bottom: 8px;
 
     @include vp-1365 {
       padding-bottom: 0;
     }
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
   p {
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
@@ -106,10 +112,11 @@
     @include vp-1365 {
       padding-top: 4px;
       font-size: 10px;
+      line-height: 10px;
     }
   }
   span {
-    font-family: $ff-bold;
+    font-family: $ff-robotoCondensed;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -133,17 +140,22 @@
 .games__time {
 
   h3 {
-    font-family: $ff-light;
+    font-family: $ff-robotoCondensed;
     font-size: 18px;
     line-height: 24px;
     font-weight: 300;
     margin: 0;
     padding-bottom: 8px;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   span {
     border-top: 1px solid $color-default-white;
-    font-family: $ff-bold;
+    font-family: $ff-robotoCondensed;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -158,17 +170,22 @@
 .games__bottom {
   p {
     display: block;
-    font-family: $ff-light;
+    font-family: $ff-robotoCondensed;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
     margin: 0;
     margin-bottom: 55px;
+
+    @include vp-767 {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 
   a {
     display: block;
-    font-family: $ff-bold;
+    font-family: $ff-robotoCondensed;
     color:$color-default-white;
     font-size: 12px;
     font-weight: 700;

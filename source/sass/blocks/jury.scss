@@ -2,11 +2,11 @@
   padding-top: 0;
 
   h2 {
-    font-family: $ff-alumniSans-semibold;
-    font-size: 32px;
+    font-family: $ff-alumniSans;
+    font-size: 54px;
     font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 1px;
+    line-height: 54px;
+    letter-spacing: 1.62px;
     color: $color-sapphire;
     margin: 0;
     padding-bottom: 45px;
@@ -17,6 +17,12 @@
       letter-spacing: 1.26px;
       text-align: center;
       padding-bottom: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 32px;
+      line-height: 32px;
+      letter-spacing: 0.96px;
     }
   }
 }
@@ -63,7 +69,7 @@
   h3 {
     display: block;
     position: absolute;
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 22px;
     font-weight: 400;
     line-height: 22px;
@@ -75,6 +81,16 @@
     padding: 15px;
     margin: 0;
     z-index: 2;
+
+    @include vp-1365 {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   .jury__info {
@@ -93,7 +109,7 @@
     p {
       display: block;
       text-align: center;
-      font-family: $ff-regular;
+      font-family: $ff-robotoCondensed;
       font-size: 16px;
       line-height: 24px;
       margin: 0;
@@ -117,9 +133,14 @@
       }
 
       li {
-        font-family: $ff-regular;
+        font-family: $ff-robotoCondensed;
         font-size: 14px;
-        line-height: 21px;
+        line-height: 22px;
+
+        @include vp-767 {
+          font-size: 16px;
+          line-height: 20px;
+        }
       }
     }
   }

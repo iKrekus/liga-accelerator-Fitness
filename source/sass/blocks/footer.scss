@@ -5,7 +5,7 @@
 .footer__wrapper {
   background-color: $black-russian;
 
-  &>div {
+  & > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -52,6 +52,14 @@
 
   a {
     color: $color-default-white;
+    font-family: "Alumni Sans\", Arial, sans-serif";
+    font-size: 42px;
+    font-size: 54px;
+    font-weight: 600;
+    letter-spacing: 1.26px;
+    line-height: 42px;
+    letter-spacing: 1.62px;
+    line-height: 54px;
 
     &:hover,
     &:focus {
@@ -91,7 +99,7 @@
 
   a {
     display: block;
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;

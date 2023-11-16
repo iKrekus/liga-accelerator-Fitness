@@ -18,7 +18,7 @@
   }
 
   h2 {
-    font-family: $ff-alumniSans-semibold;
+    font-family: $ff-alumniSans;
     color: $color-default-white;
     font-size: 54px;
     font-weight: 600;
@@ -76,7 +76,7 @@
 
   input {
     width: 100%;
-    font-family: $ff-regular;
+    font-family: $ff-robotoCondensed;
     font-size: 14px;
     line-height: 16px;
     color: $color-default-white;
@@ -99,7 +99,7 @@
     }
 
     &::placeholder {
-      font-family: $ff-regular;
+      font-family: $ff-robotoCondensed;
       font-size: 14px;
       line-height: 16px;
       color: $color-default-white;
@@ -146,7 +146,7 @@
 
   button {
     width: 100%;
-    font-family: $ff-bold;
+    font-family: $ff-robotoCondensed;
     font-size: 12px;
     font-weight: 700;
     line-height: 12px;
@@ -161,12 +161,11 @@
     grid-column: 1/-1;
 
     @include vp-1365 {
-      font-family: $ff-regular;
-      font-weight: 400;
+      font-family: $ff-robotoCondensed;
     }
 
     @include vp-767 {
-      font-family: $ff-bold;
+      font-family: $ff-robotoCondensed;
       font-size: 12px;
       font-weight: 700;
       line-height: 12px;
