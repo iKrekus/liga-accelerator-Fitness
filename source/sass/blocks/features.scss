@@ -77,7 +77,7 @@
       font-size: 70px;
       font-weight: 700;
       line-height: 70px;
-      color: transparent;
+      color: $color-sapphire;
       background-clip: text;
       background-image: $gradient;
       margin: 0 30px 1px 0;
@@ -220,6 +220,7 @@
 
     span {
       display: block;
+      color: $color-default-white;
       font-family: $ff-robotoCondensed;
       font-size: 70px;
       font-weight: 700;
