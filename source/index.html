@@ -21,10 +21,10 @@
   <body>
     <main class="main">
       <section class="hero" id="hero" data-test="hero">
-        <header class="header">
-          <div class="header__wrapper">
-            <div class="header__links">
-              <ul class="header__list">
+        <header>
+          <div>
+            <div>
+              <ul>
                 <li>
                   <a>
                     <img src="img/svg/logo.svg" width="89" height="20" alt="логотип">
@@ -83,14 +83,14 @@
       </section>
       <section class="price container" id="price" data-test="price">
         <h2>Абонементы</h2>
-        <div class="price__tabs" data-tabs="parent" data-delay="300">
-          <div class="price__nav" data-tabs="controls">
-            <button class="price__tab is-active" type="button" data-tabs="control">1 месяц</button>
-            <button class="price__tab" type="button" data-tabs="control">6 месяцев</button>
-            <button class="price__tab" type="button" data-tabs="control">12 месяцев</button>
+        <div data-tabs="parent" data-delay="300">
+          <div data-tabs="controls">
+            <button class="is-active" type="button" data-tabs="control">1 месяц</button>
+            <button type="button" data-tabs="control">6 месяцев</button>
+            <button type="button" data-tabs="control">12 месяцев</button>
           </div>
-          <div class="price__content" data-tabs="content">
-            <div class="price__pane" data-tabs="element">
+          <div data-tabs="content">
+            <div data-tabs="element">
               <ul>
                 <li>
                   <h3>С тренером</h3>
@@ -104,7 +104,7 @@
                   </div>
                   <a href="#">Купить абонемент</a>
                 </li>
-                <li class="price__item-selected">
+                <li class="selected">
                   <h3>Дневной</h3>
                   <span>с 8:00 до 17:00</span>
                   <div>
@@ -128,7 +128,7 @@
                 </li>
               </ul>
             </div>
-            <div class="price__pane" data-tabs="element">
+            <div data-tabs="element">
               <ul>
                 <li>
                   <h3>С тренером</h3>
@@ -165,7 +165,7 @@
                 </li>
               </ul>
             </div>
-            <div class="price__pane" data-tabs="element">
+            <div data-tabs="element">
               <ul>
                 <li>
                   <h3>С тренером</h3>
@@ -206,30 +206,30 @@
         </div>
       </section>
       <section class="games container" data-test="games">
-        <div class="games__wrapper">
-          <div class="games__text">
-            <div class="games__top">
+        <div>
+          <div>
+            <div>
               <h2>Super games</h2>
-              <div class="games__info">
-                <div class="games__date">
+              <div>
+                <div>
                   <h3>Дата</h3>
                   <div>
                     <span>7</span>
                     <p>Марта 2019</p>
                   </div>
                 </div>
-                <div class="games__time">
+                <div>
                   <h3>Время</h3>
                   <span>12:00</span>
                 </div>
               </div>
             </div>
-            <div class="games__bottom">
+            <div>
               <p>Ежегодные соревнования по CrossFit</p>
               <a href="#">Заполнить заявку</a>
             </div>
           </div>
-          <div class="games__image">
+          <div>
             <picture>
               <source type="image/webp" srcset="img/competition.webp, img/competition@2x.webp 2x">
               <img src="img/competition.jpg" srcset="img/competition@2x.jpg 2x" width="660" height="500" alt="Профо фото">
@@ -238,18 +238,18 @@
         </div>
         <!--DELETE AFTER-->
         <p style="text-align: center;"><br><br><br><strong style="margin: 0 auto;">--- NEED SOME SPACE --- </strong><br><br><br></p>
-        <div class="jury container" id="jury">
+        <div>
         <h2>Жюри</h2>
-        <div class="jury__slider-wrapper">
+        <div>
           <div class="jury__slider swiper">
-            <div class="jury__slider-line swiper-wrapper">
-              <div class="jury__slide swiper-slide swiper-slide-active">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
                 <h3>Анна Павлова</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo1.webp, img/photo1@2x.webp 2x">
                   <img src="img/photo1.jpg" srcset="img/photo1@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -258,13 +258,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Алексей Лавров</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo2.webp, img/photo2@2x.webp 2x">
                   <img src="img/photo2.jpg" srcset="img/photo2@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -273,13 +273,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Александр Пашков</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo3.webp, img/photo3@2x.webp 2x">
                   <img src="img/photo3.jpg" srcset="img/photo3@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -288,13 +288,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Мария Кетова</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo4.webp, img/photo4@2x.webp 2x">
                   <img src="img/photo4.jpg" srcset="img/photo4@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -303,13 +303,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Антонина Знайкина</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo1.webp, img/photo1@2x.webp 2x">
                   <img src="img/photo1.jpg" srcset="img/photo1@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -318,13 +318,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Срго Брага</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo2.webp, img/photo2@2x.webp 2x">
                   <img src="img/photo2.jpg" srcset="img/photo2@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -333,13 +333,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Валентин Фитосила</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo3.webp, img/photo3@2x.webp 2x">
                   <img src="img/photo3.jpg" srcset="img/photo3@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -348,13 +348,13 @@
                   </ul>
                 </div>
               </div>
-              <div class="jury__slide swiper-slide">
+              <div class="swiper-slide">
                 <h3>Ольга Нееда</h3>
                 <picture>
                   <source type="image/webp" srcset="img/photo4.webp, img/photo4@2x.webp 2x">
                   <img src="img/photo4.jpg" srcset="img/photo4@2x.jpg 2x" width="260" height="294" alt="Фото тренера">
                 </picture>
-                <div class="jury__info">
+                <div>
                   <p>CrossFit</p>
                   <ul>
                     <li>Certified Level 3 Trainer</li>
@@ -372,8 +372,8 @@
       </section>
       <section class="features container" data-test="features">
         <h2>Наши преимущества</h2>
-        <div class="features__wrapper">
-          <div class="features__block features__block--top-left">
+        <div>
+          <div>
             <div>
               <span>900</span>
               <span>кв/м</span>
@@ -383,7 +383,7 @@
               <p>Занимайтесь без очередей и толкучки</p>
             </div>
           </div>
-          <div class="features__block features__block--top-right">
+          <div>
             <div>
               <span>70</span>
               <span>машин</span>
@@ -393,12 +393,12 @@
               <p>Вы всегда найдете место для своей машины на нашей парковке</p>
             </div>
           </div>
-          <div class="features__block features__block--center">
+          <div>
             <span>100</span>
             <h3>Тренажеров</h3>
             <p>Современные тренажеры на все группы мышц</p>
           </div>
-          <div class="features__block features__block--bottom-left">
+          <div>
             <div>
               <span>350</span>
               <span>мест</span>
@@ -408,7 +408,7 @@
               <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
             </div>
           </div>
-          <div class="features__block features__block--bottom-right">
+          <div>
             <div>
               <span>5+</span>
               <span>лет</span>
@@ -422,27 +422,27 @@
       </section>
       <section class="offers container" id="offers" data-test="offers">
         <h2>Акции</h2>
-        <div class="offers__wrapper">
-          <div class="offers__unlimited">
-            <div class="offers__unlimited-info">
+        <div>
+          <div>
+            <div>
               <h3>Год</h3>
               <span>4999</span>
               <p>Безлимитный абонемент в тренажерный зал</p>
               <a href="#">Подробнее</a>
             </div>
-            <div class="offers__unlimited-image">
+            <div>
               <picture>
                 <source type="image/webp" srcset="img/offers.webp, img/offers@2x.webp 2x">
                 <img src="img/offers.jpg" srcset="img/offers@2x.jpg 2x" width="280" height="462" alt="Промо фото">
               </picture>
             </div>
           </div>
-          <div class="offers__block">
+          <div>
             <h3>Месяц бесплатно</h3>
             <p>Приведи друга, получи абонемент в подарок</p>
             <a href="#">Подробнее</a>
           </div>
-          <div class="offers__block">
+          <div>
             <h3>Скидка 20%</h3>
             <p>Корпоративный фитнес с командой</p>
             <a href="#">Подробнее</a>
