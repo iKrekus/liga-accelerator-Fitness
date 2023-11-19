@@ -19,113 +19,193 @@
       margin-bottom: 50px;
     }
   }
-}
 
-.faq__wrapper {
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 40px;
-
-  @include vp-1365 {
-    grid-template-columns: auto;
-  }
-}
-
-.faq__tabs {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  gap: 10px;
-
-  @include vp-1365 {
-    flex-direction: row;
-  }
-
-  @include vp-767 {
+    // .faq__wrapper
+  & > div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    justify-content: stretch;
-  }
-}
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
 
-.faq__tab-button {
-  font-family: $ff-robotoCondensed;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 18px;
+    @include vp-1365 {
+      grid-template-columns: auto;
+    }
 
-  @include vp-767 {
-    font-size: 16px;
-    line-height: 16px;
-  }
-}
 
-.faq__tab-button.is-active {
-  background: $button-gradient;
-  color: $color-default-white;
-  border: none;
-}
+  // .faq__tabs
+  & > div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
 
-.faq__pane {
-  width: 100%;
-}
-
-.faq__accordion-button {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: space-between;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 12px;
-
-  @include vp-1365 {
-    font-size: 22px;
-    line-height: 22px;
-  }
-  span {
-    margin-left: 60px;
-  }
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 20px;
-  }
-  span {
-    margin-left: 80px;
+    @include vp-1365 {
+      flex-direction: row;
+    }
 
     @include vp-767 {
-      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      justify-content: stretch;
+    }
+
+        // .faq__tab-button
+      & > button {
+        font-family: $ff-robotoCondensed;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 18px 0;
+        border: 1px solid rgba(16,	38,	84, 0.2);
+        background: none;
+        color: $color-sapphire;
+
+        @include vp-1365 {
+          padding: 18px 48px;
+        }
+
+        @include vp-767 {
+          font-size: 16px;
+          line-height: 16px;
+          padding: 14px 0;
+        }
+
+        &.is-active {
+          background: $button-gradient;
+          color: $color-default-white;
+          border: none;
+        }
+
+        @include hover-focus {
+          border: 1px solid $color-sapphire;
+        }
     }
   }
-}
+  // faq__tab-content
+  & > div:last-child {
+    // .faq__pane
+  & > div {
+    width: 100%;
+  //  faq__accordion
+    & > div {
 
-.faq__accordion-element {
-  padding: 25px 0;
-  border-bottom: 1px solid rgba(16,	38,	84, 0.2);
+       // .faq__accordion-element
+        & > div {
+          padding: 25px 0;
+          border-bottom: 1px solid rgba(16,	38,	84, 0.2);
 
-  & p {
-    color: $color-sapphire;
-    font-family: $ff-robotoCondensed;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 24px;
-    margin: 0;
-    padding-right: 200px;
+          & p {
+            color: $color-sapphire;
+            font-family: $ff-robotoCondensed;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 24px;
+            margin: 0;
+            padding-right: 200px;
 
-    @include vp-767 {
-      padding: 0;
+            @include vp-767 {
+              padding: 0;
+            }
+          }
+
+          &:first-child {
+            border-top: 1px solid rgba(16,	38,	84, 0.2);
+          }
+
+          &.is-active span {
+            background-color: $resolution-blue;
+          }
+
+          // .faq__accordion-button
+            button {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+              justify-content: space-between;
+              font-size: 18px;
+              font-weight: 400;
+              line-height: 24px;
+              margin-bottom: 12px;
+              position: relative;
+              font-family: $ff-robotoCondensed;
+              color: $color-sapphire;
+              width: 100%;
+              background: none;
+              text-align: left;
+              padding: 0;
+              padding: 10px 20px;
+              border: none;
+              cursor: pointer;
+              transition: opacity $trans-default;
+
+              @include vp-1365 {
+                font-size: 22px;
+                line-height: 22px;
+              }
+              span {
+                margin-left: 60px;
+              }
+
+              @include vp-767 {
+                font-size: 20px;
+                line-height: 20px;
+              }
+              span {
+                margin-left: 80px;
+
+                @include vp-767 {
+                  margin: 0;
+                }
+              }
+                & span {
+                  min-width: 32px;
+                  min-height: 32px;
+                  border: 1px solid $resolution-blue;
+                  border-radius: 50%;
+                  position: relative;
+
+                  &::before,
+                  &::after {
+                    content: '';
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 12px;
+                    height: 1px;
+                    background-color: $resolution-blue;
+                  }
+
+                  &::after {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                  }
+                }
+
+                &:hover span {
+                  background-color: $resolution-blue;
+
+                  &::before,
+                  &::after {
+                    background-color: $color-default-white;
+                  }
+                }
+              }
+            }
+        }
+
     }
+
   }
 
-  &:first-child {
-    border-top: 1px solid rgba(16,	38,	84, 0.2);
+
+
   }
-
 }
 
-.faq__accordion-element.is-active span {
-  background-color: $resolution-blue;
-}
+
+
+
+
+
+
+
