@@ -1,136 +1,163 @@
 .footer {
   display: inherit;
-}
 
-.footer__wrapper {
-  background-color: $black-russian;
-
-  & > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: left;
-  max-width: $vp-1366;
-  margin: 0 auto;
-
-  padding: 0 103px;
-  padding-top: 41px;
-  padding-bottom: 40px;
-
-
-
-  @include vp-1365 {
-    padding: 45px 46px;
-  }
-
-  @include vp-767 {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 15px
-  }
-
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
+  & > div:first-child {
+    position: relative;
+    background: $connection-background;
+    overflow: hidden;
 
     @include vp-1365 {
-      margin-left: 20px;
+      background: none;
     }
 
-    @include vp-767 {
-      margin: 0;
-    }
+    & > div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
 
-    &:last-child {
-      @include vp-767 {
-        padding-top: 25px;
+        @include vp-1365{
+          grid-template-columns: 1fr;
+        }
+
+        @include vp-767 {
+          grid-template-columns: auto;
+        }
+    }
+  }
+
+  // .footer__wrapper
+    & > div:last-child {
+      background-color: $black-russian;
+
+      & > div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      max-width: $vp-1366;
+      margin: 0 auto;
+
+      padding: 0 103px;
+      padding-top: 41px;
+      padding-bottom: 40px;
+
+
+
+      @include vp-1365 {
+        padding: 45px 46px;
       }
-    }
-  }
 
-  a {
-    color: $color-default-white;
-    font-family: "Alumni Sans\", Arial, sans-serif";
-    font-size: 42px;
-    font-size: 54px;
-    font-weight: 600;
-    letter-spacing: 1.26px;
-    line-height: 42px;
-    letter-spacing: 1.62px;
-    line-height: 54px;
+      @include vp-767 {
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px 15px
+      }
 
-    &:hover,
-    &:focus {
-      opacity: 0.6;
-    }
+      & > ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
 
-    &:active {
-      opacity: 0.3;
+        @include vp-1365 {
+          margin-left: 20px;
+        }
+
+        @include vp-767 {
+          margin: 0;
+        }
+
+        &:last-child {
+          @include vp-767 {
+            padding-top: 25px;
+          }
+        }
+      }
+
+      a {
+        color: $color-default-white;
+        font-family: "Alumni Sans\", Arial, sans-serif";
+        font-size: 42px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1.26px;
+        line-height: 22px;
+        line-height: 54px;
+
+        &:hover,
+        &:focus {
+          opacity: 0.6;
+        }
+
+        &:active {
+          opacity: 0.3;
+        }
+      }
+            // .footer__logo
+            & > div {
+              width: 109px;
+
+              @include vp-767 {
+                align-self: start;
+              }
+            }
+
+              // .footer__navigation
+              & > ul:first-of-type {
+                display: flex;
+                max-width: 780px;
+                flex-wrap: wrap;
+                height: auto;
+                gap: 0 40px;
+                margin: 0;
+
+                @include vp-1365 {
+                  gap: 0 30px;
+                }
+
+                @include vp-767 {
+                  gap: 20px 35px;
+                }
+
+                a {
+                  display: block;
+                  font-family: $ff-robotoCondensed;
+                  font-size: 14px;
+                  font-weight: 400;
+                  line-height: 22px;
+
+                  @include vp-767 {
+                    line-height: 20px
+                  }
+                }
+
+                li:first-child {
+                  margin: 0;
+
+                  img {
+                      width: 68px;
+                    height: 15px;
+                    }
+                  }
+                }
+
+              // .footer__social
+              & > ul:last-of-type {
+                display: flex;
+                gap: 10px;
+                margin: 0;
+                max-width: 200px;
+
+                @include vp-767 {
+                  max-width: 100%;
+                }
+
+                a {
+                  display: block;
+                  line-height: 11px;
+                }
+              }
     }
   }
 }
-}
 
-.footer__logo {
-  width: 109px;
 
-  @include vp-767 {
-    align-self: start;
-  }
-}
-
-.footer__navigation {
-  display: flex;
-  max-width: 780px;
-  flex-wrap: wrap;
-  height: auto;
-  gap: 0 40px;
-  margin: 0;
-
-  @include vp-1365 {
-    gap: 0 30px;
-  }
-
-  @include vp-767 {
-    gap: 20px 35px;
-  }
-
-  a {
-    display: block;
-    font-family: $ff-robotoCondensed;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-
-    @include vp-767 {
-      line-height: 20px
-    }
-  }
-
-  li:first-child {
-    margin: 0;
-
-    img {
-      width: 68px;
-      height: 15px;
-    }
-  }
-}
-
-.footer__social {
-  display: flex;
-  gap: 10px;
-  margin: 0;
-  max-width: 200px;
-
-  @include vp-767 {
-    max-width: 100%;
-  }
-
-  a {
-    display: block;
-    line-height: 11px;
-  }
-}

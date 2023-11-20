@@ -56,9 +56,12 @@
         font-weight: 400;
         line-height: 18px;
         padding: 18px 0;
-        border: 1px solid rgba(16,	38,	84, 0.2);
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgba(16,	38,	84, 0.2);
         background: none;
         color: $color-sapphire;
+        cursor: pointer;
 
         @include vp-1365 {
           padding: 18px 48px;
@@ -73,11 +76,12 @@
         &.is-active {
           background: $button-gradient;
           color: $color-default-white;
+          padding: 19px 0;
           border: none;
         }
 
-        @include hover-focus {
-          border: 1px solid $color-sapphire;
+        @include hover-focus{
+          border-color: $color-sapphire;
         }
     }
   }
@@ -114,6 +118,23 @@
 
           &.is-active span {
             background-color: $resolution-blue;
+
+
+        @include vp-1365 {
+          padding: 19px 48px;
+        }
+
+        @include vp-767 {
+          padding: 15px 0;
+        }
+
+            &::before {
+              background-color: $color-default-white;
+            }
+
+            &::after {
+              display: none;
+            }
           }
 
           // .faq__accordion-button
@@ -133,7 +154,7 @@
               background: none;
               text-align: left;
               padding: 0;
-              padding: 10px 20px;
+              // padding: 10px 20px;
               border: none;
               cursor: pointer;
               transition: opacity $trans-default;
@@ -158,8 +179,8 @@
                 }
               }
                 & span {
-                  min-width: 32px;
-                  min-height: 32px;
+                  width: 32px;
+                  height: 32px;
                   border: 1px solid $resolution-blue;
                   border-radius: 50%;
                   position: relative;
